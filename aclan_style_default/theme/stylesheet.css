@@ -7050,3 +7050,8 @@ ul.linklist li.responsive-menu a.responsive-menu-link:hover:before, ul.linklist 
 .imageset.icon_topic_poll:after {
   color: #709085;
 }
+
+#ac-logo-img {
+  max-height: 120px;
+  width: auto;
+}

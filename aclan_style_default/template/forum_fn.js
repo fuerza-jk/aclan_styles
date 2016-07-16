@@ -11,6 +11,10 @@ var styleConfig = {
 	collapseForums: true
 };
 
+var customElementsIds = {
+	forumLogo: "ac-logo-img"
+};
+
 /**
 * Find a member
 */
@@ -1543,7 +1547,9 @@ function parseDocument($container) {
 
 			function replaceImage() 
 			{
-				$this.css('width', (img.naturalWidth ? img.naturalWidth : img.width) + 'px');
+				if (img.id != customElementsIds.forumLogo) {
+					$this.css('width', (img.naturalWidth ? img.naturalWidth : img.width) + 'px');
+				}
 				img.setAttribute('src', img.getAttribute('data-src-hd'));
 			}
 
